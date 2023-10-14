@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
+import { QrCodeModule } from './qr-code/qr-code.module';
 
 
 @Module({
-  imports: [],
+  imports: [QrCodeModule],
   
 })
 export class AppModule {}
