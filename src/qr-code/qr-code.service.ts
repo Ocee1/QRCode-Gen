@@ -13,7 +13,7 @@ export class QrCodeService {
 
         const randomStr = ranArray.join('');
 
-        return `http://localhost:4000/${randomStr}`;
+        return `http://BASE_URL/${randomStr}`;
     }
     async generateCode(url:string): Promise<QRCodeToData> {
         try {
